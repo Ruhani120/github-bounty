@@ -86,7 +86,6 @@ export default function BountyDetails({ params }) {
 
   return (
     <div className="min-h-screen bg-[#0c0c0c] text-white">
-      {/* Header */}
       <header className="bg-[#0c0c0c] border-b border-gray-800">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -97,9 +96,7 @@ export default function BountyDetails({ params }) {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
-        {/* Back Button */}
         <div className="mb-6">
           <Link href="/" className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" />
@@ -107,9 +104,7 @@ export default function BountyDetails({ params }) {
           </Link>
         </div>
 
-        {/* Bounty Details */}
         <div className="bg-gray-900 rounded-lg p-8 border border-gray-800">
-          {/* Header Section */}
           <div className="mb-6">
             <div className="flex items-center gap-4 mb-4">
               <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium text-white ${getDifficultyColor(bounty.difficulty)}`}>
@@ -123,7 +118,6 @@ export default function BountyDetails({ params }) {
             <h1 className="text-4xl font-bold text-white mb-4">{bounty.title}</h1>
           </div>
 
-          {/* Stats Section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-gray-800 rounded-lg p-4">
               <div className="flex items-center mb-2">
@@ -148,13 +142,11 @@ export default function BountyDetails({ params }) {
             </div>
           </div>
 
-          {/* Description */}
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-white mb-4">Description</h2>
             <p className="text-gray-300 text-lg leading-relaxed">{bounty.description}</p>
           </div>
 
-          {/* Requirements */}
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-white mb-4">Requirements</h2>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
@@ -166,7 +158,6 @@ export default function BountyDetails({ params }) {
             </ul>
           </div>
 
-          {/* Apply Button */}
           <div className="flex gap-4">
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300">
               Apply for Bounty
@@ -178,14 +169,12 @@ export default function BountyDetails({ params }) {
           </div>
         </div>
 
-        {/* Comments Section */}
         <div className="bg-gray-900 rounded-lg p-8 border border-gray-800 mt-8">
           <div className="flex items-center mb-6">
             <MessageSquare className="w-6 h-6 text-blue-400 mr-3" />
             <h2 className="text-2xl font-bold text-white">Comments</h2>
           </div>
-          
-          {/* Sample Comments */}
+
           <div className="space-y-4">
             <div className="flex items-start space-x-3">
               <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
@@ -199,7 +188,7 @@ export default function BountyDetails({ params }) {
                 <p className="text-gray-300">This looks like an interesting project! I have experience with D3.js and would love to contribute.</p>
               </div>
             </div>
-            
+
             <div className="flex items-start space-x-3">
               <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
                 <User className="w-5 h-5 text-white" />
@@ -209,12 +198,11 @@ export default function BountyDetails({ params }) {
                   <span className="font-semibold text-white">Jane Smith</span>
                   <span className="text-gray-400 text-sm">5 hours ago</span>
                 </div>
-                <p className="text-gray-300">Could you provide more details about the specific chart types you're looking to implement?</p>
+                <p className="text-gray-300">Could you provide more details about the specific chart types you&apos;re looking to implement?</p>
               </div>
             </div>
           </div>
 
-          {/* Add Comment */}
           <div className="mt-6 pt-6 border-t border-gray-700">
             <div className="flex items-start space-x-3">
               <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
@@ -239,4 +227,3 @@ export default function BountyDetails({ params }) {
     </div>
   );
 }
-
