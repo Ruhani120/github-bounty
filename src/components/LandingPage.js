@@ -68,11 +68,16 @@ const LandingPage = () => {
 
           {!session && !loading && (
             <button
-  onClick={() => signIn("github", { prompt: "login" })}
+  onClick={() =>
+    signIn("github", {
+      prompt: "select_account",
+    })
+  }
   className="text-white bg-[#17579A] w-[190px] h-[37px] rounded-[9px] mt-4"
 >
   Connect GitHub to begin
 </button>
+
 
           )}
         </div>
